@@ -22,7 +22,7 @@
 							<a href="#" class="alpha selected">Forms</a>
 						</li>
 						<li>
-							<a href="#">Typography</a>
+							<a href="#">Typography xx</a>
 						</li>						
 						<li>
 							<a href="#">Layout</a>
