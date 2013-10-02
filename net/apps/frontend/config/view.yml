@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        GoAbroad.com
+    description:  GoAbroad.com is a directory of international travel opportunities
+    keywords:     goabroad, study, travel, volunteer, teach, degree
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    [/min/g=clientApp.css]
+
+  javascripts:    [/min/g=clientApp.js]
+
+  has_layout:     true
+  layout:         layout
