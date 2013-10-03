@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" package="lib.model">
+
+    <table name="tblStudent" phpName="Student">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_id" phpName="StudentId" type="integer" />
+        <column name="first_name" phpName="FirstName" type="varchar" size="255" />
+        <column name="last_name" phpName="LastName" type="varchar" size="255" />
+        <column name="middle_name" phpName="MiddleName" type="varchar" size="255" />
+        <column name="address" phpName="Address" type="longvarchar" />
+        <column name="profile_pict" phpName="ProfilePict" type="varchar" size="255" />
+        <column name="date_of_birth" phpName="dateOfBirth" type="timestamp" />
+        <column name="date_added" phpName="dateAdded" type="timestamp" />
+        <column name="is_active" phpName="IsActive" type="boolean" />
+    </table>
+
+    <table name="tblStudentCourse" phpName="StudentCourse"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_id" phpName="StudentId" type="integer" />
+        <column name="section" phpName="Section" type="varchar" size="255" />
+        <column name="course_id" phpName="CourseId" type="integer"/>
+        <column name="year_level_id" phpName="YearLevelId" type="integer"/>
+        <column name="school_year" phpName="SchoolYear" type="timestamp"/>
+        <column name="is_active" phpName="IsActive" type="boolean" />
+        
+        <foreign-key foreignTable="tblStudent">
+            <reference local="student_id" foreign="id" />
+        </foreign-key>
+        
+        <foreign-key foreignTable="tblCourse">
+            <reference local="course_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="tblYearLevel">
+            <reference local="year_level_id" foreign="id" />
+        </foreign-key>
+    </table>
+  
+    <table name="tblCourse" phpName="Course"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="course_name" phpName="CourseName" type="varchar" size="255" />
+        <unique>
+            <unique-column name="course_name" />
+        </unique>
+    </table>
+
+    <table name="tblYearLevel" phpName="YearLevel"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="year_level" phpName="YearLevel" type="varchar" size="255" />
+        <column name="semester" phpName="Semester" type="varchar" size="255" />
+    </table>
+
+    <table name="tblStudentSchedule" phpName="StudentSchedule"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_course_id" phpName="StudentCourseId" type="integer" />
+        <column name="day" phpName="Day" type="varchar" size="20" />
+        <column name="start_hour" phpName="StartHour" type="time" />
+        <column name="end_hour" phpName="EndHour" type="time" />
+        <column name="subject_id" phpName="SubjectId" type="time" />
+        <column name="room_id" phpName="RoomId" type="integer" />
+        
+        <foreign-key foreignTable="tblStudentCourse">
+            <reference local="student_course_id" foreign="id" />
+        </foreign-key>
+        
+        <foreign-key foreignTable="tblSubject">
+            <reference local="subject_id" foreign="id" />
+        </foreign-key>
+        
+        <foreign-key foreignTable="tblRoom">
+            <reference local="room_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="tblSubject" phpName="Subject"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="subject_name" phpName="SubjectName" type="varchar" size="255" />
+        <unique>
+            <unique-column name="subject_name" />
+        </unique>
+    </table>
+
+    <table name="tblRoom" phpName="Room"> 
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" phpName="Name" type="varchar" size="255" />
+        <column name="description" phpName="Description" type="varchar" size="1000" />
+        <unique>
+            <unique-column name="name" />
+        </unique>
+    </table>
+
+</database>
