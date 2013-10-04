@@ -17,9 +17,11 @@ class studentActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-  	echo 'hi';
-    //$this->forward('default', 'module');
-  
+    
+    $student = StudentPeer::doSelect(new Criteria);
+
+    $this->pager = new GaPager($student, 10);
+    $this->pager->setPage($request->getParameter('page', 1));
 
   }
 

@@ -24,7 +24,7 @@ all:
     class:        sfPropelDatabase
     param:
       classname:  PropelPDO
-      dsn:        mysql:dbname=studentMonitoring;host=localhost
+      dsn:        mysql:dbname=studentMonitoring;host=phpmyadmin.local
       username:   root
       password:   
       encoding:   utf8

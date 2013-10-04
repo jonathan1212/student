@@ -1,3 +1,16 @@
+<?php foreach($pager->getResults() as $student):?>
+	<?php echo $student->getFirstName(); ?>
+
+<?php endforeach; ?>
+
+
+<div>
+	<?php if ($pager->haveToPaginate()): ?>
+			<?php include_partial('widget/pager', array('pager' => $pager, 'baseUrl' => url_for('student/index'), 'moreParams' => '')); ?>
+    <?php endif; ?>
+</div>
+
+
 <div id="content" class="border rounded-big-border container_16 clearFix">
 							
 				<div class="sectionHead border-bottom rounded-big-border-top">

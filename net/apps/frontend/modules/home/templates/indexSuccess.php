@@ -510,7 +510,13 @@
 								</p>								
 							</div>					
 						</div> <!-- end sideBlock -->
-						
+					
+						<ul>
+							<li> xxx </li>
+							<li> xxx </li>
+
+						</ul>
+
 					</div> <!-- end sidebar -->
 				
 				</div> <!-- end contentFlow -->

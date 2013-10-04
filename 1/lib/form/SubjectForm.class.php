@@ -20,12 +20,11 @@ class SubjectForm extends BaseSubjectForm
       'subject_name' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 
-   /* $this->validatorSchema->setPostValidator(
+    $this->validatorSchema->setPostValidator(
       new sfValidatorPropelUnique(array('model' => 'Subject', 'column' => array('subject_name')))
-    );*/
+    );
 
     $this->widgetSchema->setNameFormat('subject[%s]');
- //   $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
-
+ 
   }
 }

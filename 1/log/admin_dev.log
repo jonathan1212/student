@@ -1184,3 +1184,242 @@ Oct 03 20:32:56 symfony [info] {sfWebDebugLogger} View "Success" for "subject/cr
 Oct 03 20:32:56 symfony [info] {sfWebDebugLogger} Partial "subject/_form" 1.05 ms (1)
 Oct 03 20:32:56 symfony [info] {sfWebResponse} Send content (30959 o)
 Oct 03 20:32:56 symfony [info] {myUser} Remove old flash messages ("error")
+Oct 04 09:36:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'student',  'action' => 'index',)
+Oct 04 09:36:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 09:36:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 09:36:56 symfony [info] {studentActions} Call "studentActions->executeIndex()"
+Oct 04 09:36:56 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/indexSuccess.php"
+Oct 04 09:36:56 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:36:56 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:36:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 09:36:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 09:36:56 symfony [info] {sfWebDebugLogger} Configuration 109.98 ms (9)
+Oct 04 09:36:56 symfony [info] {sfWebDebugLogger} Factories 127.36 ms (1)
+Oct 04 09:36:56 symfony [info] {sfWebDebugLogger} Action "student/index" 0.14 ms (1)
+Oct 04 09:36:56 symfony [info] {sfWebDebugLogger} View "Success" for "student/index" 12.86 ms (1)
+Oct 04 09:36:56 symfony [info] {sfWebResponse} Send content (36790 o)
+Oct 04 09:37:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 09:37:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 09:37:11 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 09:37:11 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 09:37:11 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 09:37:11 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:37:11 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:37:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 09:37:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 09:37:11 symfony [info] {sfWebDebugLogger} Configuration 7.45 ms (9)
+Oct 04 09:37:11 symfony [info] {sfWebDebugLogger} Factories 9.65 ms (1)
+Oct 04 09:37:11 symfony [info] {sfWebDebugLogger} Action "student/create" 147.81 ms (1)
+Oct 04 09:37:11 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 78.35 ms (1)
+Oct 04 09:37:11 symfony [info] {sfWebDebugLogger} Partial "student/_form" 31.40 ms (1)
+Oct 04 09:37:11 symfony [info] {sfWebResponse} Send content (31104 o)
+Oct 04 09:57:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 09:57:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 09:57:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 09:57:19 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 09:57:19 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 09:57:19 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 09:57:19 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:57:19 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:57:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 09:57:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 09:57:19 symfony [info] {sfWebDebugLogger} Configuration 45.73 ms (10)
+Oct 04 09:57:19 symfony [info] {sfWebDebugLogger} Factories 20.58 ms (1)
+Oct 04 09:57:19 symfony [info] {sfWebDebugLogger} Action "student/create" 6.57 ms (1)
+Oct 04 09:57:19 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 6.11 ms (1)
+Oct 04 09:57:19 symfony [info] {sfWebDebugLogger} Partial "student/_form" 1.41 ms (1)
+Oct 04 09:57:19 symfony [info] {sfWebResponse} Send content (31102 o)
+Oct 04 09:57:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 09:57:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 09:57:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 09:57:22 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 09:57:22 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 09:57:22 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 09:57:22 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:57:22 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 09:57:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 09:57:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 09:57:22 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Oct 04 09:57:22 symfony [info] {sfWebDebugLogger} Factories 4.12 ms (1)
+Oct 04 09:57:22 symfony [info] {sfWebDebugLogger} Action "student/create" 4.65 ms (1)
+Oct 04 09:57:22 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 4.26 ms (1)
+Oct 04 09:57:22 symfony [info] {sfWebDebugLogger} Partial "student/_form" 0.79 ms (1)
+Oct 04 09:57:23 symfony [info] {sfWebResponse} Send content (31768 o)
+Oct 04 10:02:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:02:52 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:02:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:02:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:02:52 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:02:52 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:02:52 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:02:52 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:52 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:02:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:02:52 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (9)
+Oct 04 10:02:52 symfony [info] {sfWebDebugLogger} Factories 37.50 ms (1)
+Oct 04 10:02:52 symfony [info] {sfWebDebugLogger} Action "student/create" 7.22 ms (1)
+Oct 04 10:02:52 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 4.20 ms (1)
+Oct 04 10:02:52 symfony [info] {sfWebDebugLogger} Partial "student/_form" 1.13 ms (1)
+Oct 04 10:02:52 symfony [info] {sfWebResponse} Send content (32494 o)
+Oct 04 10:02:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:02:54 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:02:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:02:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:02:54 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:02:54 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:02:54 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:02:54 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:54 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:02:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:02:54 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Oct 04 10:02:54 symfony [info] {sfWebDebugLogger} Factories 7.43 ms (1)
+Oct 04 10:02:54 symfony [info] {sfWebDebugLogger} Action "student/create" 4.48 ms (1)
+Oct 04 10:02:54 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 3.94 ms (1)
+Oct 04 10:02:54 symfony [info] {sfWebDebugLogger} Partial "student/_form" 0.87 ms (1)
+Oct 04 10:02:54 symfony [info] {sfWebResponse} Send content (32321 o)
+Oct 04 10:02:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:02:55 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:02:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:02:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:02:55 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:02:55 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Configuration 2.97 ms (9)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Factories 4.64 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Action "student/create" 5.88 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 7.99 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Partial "student/_form" 0.86 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send content (32321 o)
+Oct 04 10:02:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:02:55 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:02:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:02:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:02:55 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:02:55 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:55 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Factories 4.35 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Action "student/create" 9.35 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 3.57 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebDebugLogger} Partial "student/_form" 0.81 ms (1)
+Oct 04 10:02:55 symfony [info] {sfWebResponse} Send content (32322 o)
+Oct 04 10:02:56 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:02:56 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:02:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:02:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:02:56 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:02:56 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:02:56 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:02:56 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:56 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:02:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:02:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:02:56 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Oct 04 10:02:56 symfony [info] {sfWebDebugLogger} Factories 4.78 ms (1)
+Oct 04 10:02:56 symfony [info] {sfWebDebugLogger} Action "student/create" 5.82 ms (1)
+Oct 04 10:02:56 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 3.77 ms (1)
+Oct 04 10:02:56 symfony [info] {sfWebDebugLogger} Partial "student/_form" 0.90 ms (1)
+Oct 04 10:02:56 symfony [info] {sfWebResponse} Send content (32320 o)
+Oct 04 10:03:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:03:37 symfony [info] {myUser} Flag old flash messages ("error")
+Oct 04 10:03:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:03:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:03:37 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:03:38 symfony [info] {myUser} Remove old flash messages ("error")
+Oct 04 10:04:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:04:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:04:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:04:40 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:05:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:05:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:05:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:05:01 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:05:01 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:05:01 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:05:01 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:05:01 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:05:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:05:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:05:01 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Oct 04 10:05:01 symfony [info] {sfWebDebugLogger} Factories 4.56 ms (1)
+Oct 04 10:05:01 symfony [info] {sfWebDebugLogger} Action "student/create" 5.54 ms (1)
+Oct 04 10:05:01 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 4.93 ms (1)
+Oct 04 10:05:01 symfony [info] {sfWebDebugLogger} Partial "student/_form" 1.15 ms (1)
+Oct 04 10:05:01 symfony [info] {sfWebResponse} Send content (31232 o)
+Oct 04 10:05:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:05:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:05:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:05:02 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:06:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:06:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:06:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:06:16 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:06:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:06:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:06:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:06:28 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:07:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:07:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:07:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:07:47 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:07:47 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:07:47 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:07:47 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:07:47 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:07:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:07:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:07:47 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (9)
+Oct 04 10:07:47 symfony [info] {sfWebDebugLogger} Factories 25.66 ms (1)
+Oct 04 10:07:47 symfony [info] {sfWebDebugLogger} Action "student/create" 4.14 ms (1)
+Oct 04 10:07:47 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 21.22 ms (1)
+Oct 04 10:07:47 symfony [info] {sfWebDebugLogger} Partial "student/_form" 17.69 ms (1)
+Oct 04 10:07:47 symfony [info] {sfWebResponse} Send content (31239 o)
+Oct 04 10:09:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:09:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:09:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:09:50 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:09:50 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:09:50 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:09:50 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:09:50 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:09:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:09:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:09:50 symfony [info] {sfWebDebugLogger} Configuration 3.05 ms (9)
+Oct 04 10:09:50 symfony [info] {sfWebDebugLogger} Factories 215.18 ms (1)
+Oct 04 10:09:50 symfony [info] {sfWebDebugLogger} Action "student/create" 82.03 ms (1)
+Oct 04 10:09:50 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 25.68 ms (1)
+Oct 04 10:09:50 symfony [info] {sfWebDebugLogger} Partial "student/_form" 20.99 ms (1)
+Oct 04 10:09:50 symfony [info] {sfWebResponse} Send content (31395 o)
+Oct 04 10:09:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:09:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:09:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:09:52 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:10:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /student/create with parameters array (  'module' => 'student',  'action' => 'create',)
+Oct 04 10:10:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Oct 04 10:10:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Oct 04 10:10:07 symfony [info] {studentActions} Call "studentActions->executeCreate()"
+Oct 04 10:10:12 symfony [debug] {sfPropelLogger} time:  0.006 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Oct 04 10:10:12 symfony [debug] {sfPropelLogger} time:  0.029 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | INSERT INTO tblStudent (`ID`,`FIRST_NAME`) VALUES (NULL,'test')
+Oct 04 10:10:12 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/createSuccess.php"
+Oct 04 10:10:12 symfony [info] {sfPartialView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/modules/student/templates/_form.php"
+Oct 04 10:10:12 symfony [info] {sfPHPView} Decorate content with "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:10:12 symfony [info] {sfPHPView} Render "/Users/Jonathan/LOCALlDevDisk/source/SYMFONY1_PROJECTS/student/1/apps/admin/templates/layout.php"
+Oct 04 10:10:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Oct 04 10:10:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Oct 04 10:10:12 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+Oct 04 10:10:12 symfony [info] {sfWebDebugLogger} Factories 10.96 ms (1)
+Oct 04 10:10:12 symfony [info] {sfWebDebugLogger} Action "student/create" 5138.03 ms (1)
+Oct 04 10:10:12 symfony [info] {sfWebDebugLogger} View "Success" for "student/create" 5.60 ms (1)
+Oct 04 10:10:12 symfony [info] {sfWebDebugLogger} Partial "student/_form" 1.39 ms (1)
+Oct 04 10:10:12 symfony [info] {sfWebResponse} Send content (34191 o)

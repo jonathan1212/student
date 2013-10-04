@@ -11,7 +11,7 @@
 
 return array(
    	'clientApp.css' => array('//css/clientapp/gacomclient.css', '//css/clientapp/multiselect.css'),
-   	'clientApp.js' => array('//js/jquery-1.9.0.min.js', '//js/jquery.json-1.3.min.js', '//js/jquery.validate.min.js', '//js/jquery.popup.js'),
+   	'clientApp.js' => array('//js/jquery-1.9.0.min.js','//js/jquery-ui-1.10.3.js', '//js/jquery.json-1.3.min.js', '//js/jquery.validate.min.js', '//js/jquery.popup.js'),
 
 	//'jquery.ui.x.css' = array(''),
 
