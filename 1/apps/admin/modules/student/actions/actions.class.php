@@ -27,11 +27,7 @@ class studentActions extends sfActions
 
   public function executeCreate(sfWebRequest $request)
   {
-    //$student = new Student();
-    //$student->setStudentId(2);
-    //$student->save();
-    //exit;
-     $this->form = new StudentForm();
+     $this->form = new SubjectForm();
 
      if ($request->isMethod('POST')) {
         $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
