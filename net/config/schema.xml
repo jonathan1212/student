@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" package="lib.model">
+
+    <table name="tblStudent" phpName="Student">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_id" phpName="StudentId" type="integer" />
+        <column name="first_name" phpName="FirstName" type="varchar" size="255" />
+        <column name="last_name" phpName="LastName" type="varchar" size="255" />
+        <column name="middle_name" phpName="MiddleName" type="varchar" size="255" />
+        <column name="address" phpName="Address" type="longvarchar" />
+        <column name="profile_pict" phpName="ProfilePict" type="varchar" size="255" />
+        <column name="date_of_birth" phpName="dateOfBirth" type="timestamp" />
+        <column name="date_added" phpName="dateAdded" type="timestamp" />
+        <column name="is_active" phpName="IsActive" type="boolean" />
+    </table>
+
+    <table name="tblYearLevel" phpName="tblYearLevel">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" phpName="Name" type="varchar" size="255" />
+    </table>
+
+    <table name="tblStudentYear" phpName="tblStudentYear">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_id" phpName="StudentId" type="integer" size="11" />
+        <column name="is_active" phpName="isActive" type="boolean" />
+        <column name="status" phpName="Status" type="boolean" />
+        
+        <foreign-key foreignTable="tblStudent">
+            <reference local="student_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+
+    <table name="tblAssestment" phpName="Assestment">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" phpName="Name" type="varchar" size="255" />
+        <column name="description" phpName="Description" type="varchar" type="1000" />
+        <column name="amount" phpName="Amount" type="integer" size="11" />
+    </table>
+
+    <table name="tblYearAssestment" phpName="YearAssestment">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="year_id" phpName="YearId" type="integer" size="11" />
+        <column name="assestment_id" phpName="AssestmentId" type="integer" type="11" />
+        <column name="date_added" phpName="DateAdded" type="timestamp" />
+
+        <foreign-key foreignTable="tblYear">
+            <reference local="year_id" foreign="id" />
+        </foreign-key>
+        <foreign-key foreignTable="tblAssestment">
+            <reference local="assestment_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="tblStudentAssestment" phpName="StudentAssestment">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_year_id" phpName="StudentYearId" type="integer" size="11" />
+        <column name="assestment_id" phpName="AssestmentId" type="integer" type="11" />
+        <column name="date_added" phpName="DateAdded" type="timestamp" />
+
+        <foreign-key foreignTable="tblStudentYear">
+            <reference local="student_year_id" foreign="id" />
+        </foreign-key>
+        <foreign-key foreignTable="tblAssestment">
+            <reference local="assestment_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+
+    <table name="tblStudentAssestmentManual" phpName="StudentAssestmentManual">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_year_id" phpName="StudentYearId" type="integer" size="11" />
+        <column name="name" phpName="Name" type="varchar" size="255" />
+        <column name="description" phpName="Description" type="varchar" type="1000" />
+        <column name="amount" phpName="Amount" type="integer" size="11" />
+        <column name="date_added" phpName="DateAdded" type="timestamp" />
+
+        <foreign-key foreignTable="tblStudentYear">
+            <reference local="student_year_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="tblStudentPayment" phpName="StudentPayment">
+        <column name="id" type="integer" phpName="ID" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="student_year_id" phpName="StudentYearId" type="integer" size="11" />
+        <column name="student_assestment_id" phpName="StudentAssestmentId" type="integer" size="11" />
+        <column name="student_assestment_manual_id" phpName="StudentAssestmentManualId" type="integer" size="11" />
+        <column name="date_added" phpName="DateAdded" type="timestamp" />
+        <column name="status" phpName="Status" type="boolean" />
+
+        <foreign-key foreignTable="tblStudentYear">
+            <reference local="student_year_id" foreign="id" />
+        </foreign-key>
+        <foreign-key foreignTable="tblStudentAssestment">
+            <reference local="student_assestment_id" foreign="id" />
+        </foreign-key>
+        <foreign-key foreignTable="tblStudentAssestmentManual">
+            <reference local="student_assestment_id" foreign="id" />
+        </foreign-key>
+
+    </table>
+
+    
+</database>
