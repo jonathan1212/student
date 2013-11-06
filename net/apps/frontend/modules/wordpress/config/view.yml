@@ -1,0 +1,13 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+all:
+  title:        net
+  description:  GoAbroad.com is a directory of international travel opportunities
+  keywords:     goabroad, study, travel, volunteer, teach, degree
+  language:     en
+
+  stylesheets:    [/wordpress/twentythirteen/fonts/genericons.css?ver=2.09,/wordpress/twentythirteen/style.css?ver=2013-07-18]
+
+  javascripts:    []
+
